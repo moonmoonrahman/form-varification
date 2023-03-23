@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Bootstrap-form</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+
+
+<form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+
+
+
+	
+
+<div class="container">
+
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="f-name" class="form-label f-name">First name</label>
+    <input type="text" class="form-control is-valid" id="f-name" value="Moon" required>
+    <div class="valid-feedback">
+      Perfect!
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="l-name" class="form-label l-name">Last name</label>
+    <input type="text" class="form-control is-valid" id="l-name" value="Rahman" required>
+    <div class="valid-feedback">
+      Perfect!
+    </div>
+  </div>
+  
+  <div class="col-md-6">
+    <label for="validationServer03" class="form-label">City</label>
+    <input type="text" class="form-control is-invalid" id="validationServer03" aria-describedby="validationServer03Feedback" required>
+    <div id="validationServer03Feedback" class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="vS04" class="form-label">State</label>
+    <select class="form-select is-invalid" id="vS04" aria-describedby="vS04F" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div id="validationServer04Feedback" class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationServer05" class="form-label">Zip</label>
+    <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
+    <div id="validationServer05Feedback" class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required>
+      <label class="form-check-label" for="invalidCheck3">
+        Agree to terms and conditions
+      </label>
+      <div id="invalidCheck3Feedback" class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+
+
+	<br>
+	<br>
+
+
+<form>
+  <div class="mb-3">
+    <label for="Email1" class="form-label Email1">Email address</label>
+    <input type="email" class="form-control" id="Email1" name="Email1" aria-describedby="emailHelp">
+    
+
+  <div class="mb-3">
+    <label for="Password1" class="form-label Password1">Password</label>
+    <input type="password" class="form-control" id="Password1" name="Password1">
+  </div>
+
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input Check1" id="Check1">
+    <label class="form-check-label" for="Check1">Check me out</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+
+<form>
+  <div class="mb-3">
+    <label for="Email1" class="form-label Email1">Email address</label>
+    <input type="email" class="form-control" id="Email1" name="Email1" aria-describedby="emailHelp" disabled >
+    
+
+  <div class="mb-3">
+    <label for="Password1" class="form-label Password1">Password</label>
+    <input type="password" class="form-control" id="Password1" name="Password1" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="Password6" class="col-form-label">Password</label>
+  </div>
+  <div class="col-auto">
+    <input type="password" id="Password6" class="form-control Password6" aria-describedby="passwordHelpInline" name="Password6">
+  </div>
+  <div class="col-auto">
+    <span id="passwordHelpInline" class="form-text">
+      Must be 8-20 characters long.
+    </span>
+  </div>
+</div>
+
+<br>
+<br>
+<div class="mb-3">
+  <label for="ControlInput1" class="form-label ControlInput1">Email address</label>
+  <input type="email" class="form-control ControlInput1" id="ControlInput1" placeholder="name@example.com" name="ControlInput1">
+</div>
+<div class="mb-3">
+  <label for="ControlTextarea1" class="form-label ControlTextarea1">Example text-area</label>
+  <textarea class="form-control ControlTextarea1" id="ControlTextarea1" rows="3" name="ControlTextarea1"></textarea>
+</div>
+<br>
+<br>
+
+<div class="mb-3">
+  <label for="formFile1" class="form-label formFile1">Default file input example</label>
+  <input class="form-control formFile1" type="file" id="formFile1" name="formFile1">
+</div>
+<div class="mb-3">
+  <label for="formFileMultiple1" class="form-label formFileMultiple1">Multiple files input example</label>
+  <input class="form-control formFileMultiple1" type="file" name="formFileMultiple1" id="formFileMultiple1"
+  multiple>
+</div>
+<div class="mb-3">
+  <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+  <input class="form-control" type="file" id="formFileDisabled" disabled>
+</div>
+<div class="mb-3">
+  <label for="formFileSm" class="form-label">Small file input example</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+<div>
+  <label for="formFileLg" class="form-label">Large file input example</label>
+  <input class="form-control form-control-lg" id="formFileLg" type="file">
+</div>
+
+<br>
+
+<select class="form-select" aria-label="Default select example">
+  <option selected>Open this select menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+
+<br>
+<br>
+<div class="form-check">
+  <input class="form-check-input flexCheckDefault1" type="checkbox" value="" id="flexCheckDefault1" name="flexCheckDefault1">
+  <label class="form-check-label" for="flexCheckDefault1">
+    Default checkbox
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input flexCheckDefault1" name="flexCheckDefault1" type="checkbox" value="" id="flexCheckChecked1" checked>
+  <label class="form-check-label" for="flexCheckChecked1">
+    Checked checkbox
+  </label>
+</div>
+<br>
+<br>
+<div class="form-floating mb-3">
+  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <label for="floatingInput">Email address</label>
+</div>
+<div class="form-floating">
+  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <label for="floatingPassword">Password</label>
+</div>
+
+
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+</body>
+</html>
